@@ -13,7 +13,9 @@ struct ContentView: View {
         VStack {
             Text("Dice Roll")
                 .font(.title)
-            Text("\(randomValue)")
+            Image("pips \(randomValue)")
+                .resizable()
+                .frame(width: 200, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .font(.system(size: 72))
                 .padding()
                 .onTapGesture {
