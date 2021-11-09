@@ -24,7 +24,7 @@ struct ContentView: View {
                 .padding()
                 .onTapGesture {
                     chooseRandom(times: 3)
-                    withAnimation(.interpolatingSpring(stiffness: 10, damping: 2)) {
+                    withAnimation(.interpolatingSpring(stiffness: 10, damping: 5)) {
                         rotation += 360
                     }
                 }
